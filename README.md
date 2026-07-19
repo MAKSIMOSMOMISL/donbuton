@@ -1,5 +1,9 @@
-# donbuton
+# Планы RU/EN
 
-# планы
+Заменить картинки с рандомных - на нужные с цветами и названиями.
 
-обсужу в скором времени с работодателем.
+Реализовать корзину с методами оплаты и доставкой.
+
+Replace placeholder images with the correct ones, featuring the specific colors and names.
+
+Implement a shopping cart with payment and delivery options.
