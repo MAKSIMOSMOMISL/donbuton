@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DonButon — Магазин цветов</title>
+    <title>Дон Бутон — Магазин цветов</title>
     <style>
         /* ===== БАЗОВЫЕ СТИЛИ ===== */
         * {
@@ -14,7 +15,8 @@
 
         body {
             font-family: 'Segoe UI', Arial, sans-serif;
-            background: linear-gradient(135deg, #0d001a 0%, #2d0033 30%, #4a0033 60%, #1a0033 100%);
+            /* НОВЫЙ ФОН — глубокий тёмно-синий/фиолетовый */
+            background: linear-gradient(135deg, #0f0c29 0%, #1a1a2e 40%, #16213e 70%, #0f0c29 100%);
             color: #ffffff;
             min-height: 100vh;
             padding: 20px;
@@ -31,7 +33,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 20px 0 30px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
             flex-wrap: wrap;
             gap: 15px;
         }
@@ -40,7 +42,8 @@
             font-size: 32px;
             font-weight: 900;
             text-decoration: none;
-            background: linear-gradient(135deg, #ffe600, #ff2d78, #9b30ff);
+            /* НОВЫЙ ЦВЕТ — золотой градиент */
+            background: linear-gradient(135deg, #D4AF37, #F5B041, #D4AF37);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -63,7 +66,8 @@
         }
 
         .nav a:hover {
-            color: #ff2d78;
+            color: #D4AF37;
+            /* Золотой при наведении */
         }
 
         /* ===== ГЕРОЙ ===== */
@@ -88,14 +92,16 @@
 
         .badge {
             display: inline-block;
-            background: linear-gradient(135deg, #ff2d78, #9b30ff);
+            /* НОВЫЙ ЦВЕТ — золотой + коралловый */
+            background: linear-gradient(135deg, #D4AF37, #FF6B6B);
             padding: 6px 22px;
             border-radius: 50px;
             font-size: 12px;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 2px;
-            box-shadow: 0 0 30px rgba(255, 45, 120, 0.3);
+            box-shadow: 0 0 30px rgba(212, 175, 55, 0.3);
+            color: #0f0c29;
         }
 
         .hero h1 {
@@ -112,11 +118,13 @@
         }
 
         .hero h1 .glow {
-            text-shadow: 0 0 30px rgba(255, 45, 120, 0.5);
+            /* НОВЫЙ ЦВЕТ — коралловое свечение */
+            text-shadow: 0 0 30px rgba(255, 107, 107, 0.4), 0 0 60px rgba(212, 175, 55, 0.2);
         }
 
         .hero h1 .gradient {
-            background: linear-gradient(135deg, #ffe600, #ff2d78, #9b30ff);
+            /* НОВЫЙ ЦВЕТ — золотой + коралловый */
+            background: linear-gradient(135deg, #D4AF37, #FF6B6B, #D4AF37);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -142,8 +150,9 @@
 
         .btn-primary {
             display: inline-block;
-            background: linear-gradient(135deg, #ffe600, #ff6d00);
-            color: #1a0033;
+            /* НОВЫЙ ЦВЕТ — золотой */
+            background: linear-gradient(135deg, #D4AF37, #F5B041);
+            color: #0f0c29;
             padding: 14px 32px;
             border-radius: 12px;
             font-weight: 700;
@@ -156,12 +165,13 @@
 
         .btn-primary:hover {
             transform: translateY(-3px);
-            box-shadow: 0 0 40px rgba(255, 230, 0, 0.3);
+            box-shadow: 0 0 40px rgba(212, 175, 55, 0.4);
         }
 
         .btn-secondary {
             display: inline-block;
-            border: 2px solid #ff2d78;
+            /* НОВЫЙ ЦВЕТ — коралловая обводка */
+            border: 2px solid #FF6B6B;
             color: #fff;
             padding: 14px 32px;
             border-radius: 12px;
@@ -169,15 +179,15 @@
             font-size: 14px;
             text-transform: uppercase;
             text-decoration: none;
-            background: rgba(255, 45, 120, 0.08);
+            background: rgba(255, 107, 107, 0.08);
             transition: 0.3s;
             letter-spacing: 1px;
         }
 
         .btn-secondary:hover {
             transform: translateY(-3px);
-            box-shadow: 0 0 40px rgba(255, 45, 120, 0.2);
-            background: rgba(255, 45, 120, 0.15);
+            box-shadow: 0 0 40px rgba(255, 107, 107, 0.2);
+            background: rgba(255, 107, 107, 0.15);
         }
 
         .stats {
@@ -190,7 +200,8 @@
         .stats .number {
             font-size: 34px;
             font-weight: 900;
-            background: linear-gradient(135deg, #ffe600, #ff2d78);
+            /* НОВЫЙ ЦВЕТ — золотой */
+            background: linear-gradient(135deg, #D4AF37, #F5B041);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -207,8 +218,9 @@
             height: 320px;
             border-radius: 50%;
             object-fit: cover;
-            box-shadow: 0 0 60px rgba(255, 45, 120, 0.25), 0 0 120px rgba(155, 48, 255, 0.1);
-            border: 3px solid rgba(255, 45, 120, 0.2);
+            /* НОВЫЙ ЦВЕТ — золотая обводка */
+            box-shadow: 0 0 60px rgba(212, 175, 55, 0.2), 0 0 120px rgba(255, 107, 107, 0.1);
+            border: 3px solid rgba(212, 175, 55, 0.3);
         }
 
         @media (max-width: 600px) {
@@ -220,13 +232,15 @@
 
         .discount-badge {
             display: inline-block;
-            background: rgba(255, 45, 120, 0.9);
+            /* НОВЫЙ ЦВЕТ — коралловый */
+            background: rgba(255, 107, 107, 0.9);
             padding: 12px 24px;
             border-radius: 16px;
             margin-top: 18px;
             font-weight: 600;
             font-size: 15px;
-            box-shadow: 0 0 40px rgba(255, 45, 120, 0.3);
+            box-shadow: 0 0 40px rgba(255, 107, 107, 0.3);
+            color: #fff;
         }
 
         /* ===== ЗАГОЛОВКИ СЕКЦИЙ ===== */
@@ -236,7 +250,7 @@
         }
 
         .section-title .sub {
-            color: #ff6b9d;
+            color: #FF6B6B;
             font-size: 13px;
             text-transform: uppercase;
             letter-spacing: 4px;
@@ -256,7 +270,8 @@
         }
 
         .section-title h2 span {
-            background: linear-gradient(135deg, #ffe600, #ff2d78, #9b30ff);
+            /* НОВЫЙ ЦВЕТ — золотой + коралловый */
+            background: linear-gradient(135deg, #D4AF37, #FF6B6B);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -276,17 +291,19 @@
         }
 
         .card {
-            background: rgba(255, 255, 255, 0.06);
+            background: rgba(255, 255, 255, 0.05);
             border-radius: 18px;
             overflow: hidden;
             transition: 0.4s;
-            border: 1px solid rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(212, 175, 55, 0.1);
         }
 
         .card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 20px 50px rgba(255, 45, 120, 0.15);
-            background: rgba(255, 255, 255, 0.09);
+            /* НОВЫЙ ЦВЕТ — золотая тень */
+            box-shadow: 0 20px 50px rgba(212, 175, 55, 0.15);
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(212, 175, 55, 0.3);
         }
 
         .card .image-wrap {
@@ -314,8 +331,10 @@
             font-size: 11px;
             font-weight: 700;
             text-transform: uppercase;
-            background: linear-gradient(135deg, #ff2d78, #9b30ff);
-            box-shadow: 0 0 20px rgba(255, 45, 120, 0.3);
+            /* НОВЫЙ ЦВЕТ — золотой + коралловый */
+            background: linear-gradient(135deg, #D4AF37, #FF6B6B);
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+            color: #0f0c29;
         }
 
         .card .content {
@@ -344,14 +363,16 @@
         .card .price {
             font-size: 22px;
             font-weight: 900;
-            background: linear-gradient(135deg, #ffe600, #ff2d78);
+            /* НОВЫЙ ЦВЕТ — золотой */
+            background: linear-gradient(135deg, #D4AF37, #F5B041);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
 
         .card .btn-buy {
-            background: linear-gradient(135deg, #ff2d78, #9b30ff);
+            /* НОВЫЙ ЦВЕТ — коралловый */
+            background: linear-gradient(135deg, #FF6B6B, #e55a5a);
             color: #fff;
             border: none;
             padding: 9px 20px;
@@ -366,7 +387,7 @@
 
         .card .btn-buy:hover {
             transform: scale(1.05);
-            box-shadow: 0 0 30px rgba(255, 45, 120, 0.3);
+            box-shadow: 0 0 30px rgba(255, 107, 107, 0.3);
         }
 
         /* ===== ПРЕИМУЩЕСТВА ===== */
@@ -382,13 +403,14 @@
             padding: 30px 22px;
             border-radius: 18px;
             text-align: center;
-            border: 1px solid rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(212, 175, 55, 0.1);
             transition: 0.4s;
         }
 
         .benefit:hover {
             transform: translateY(-5px);
             background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(212, 175, 55, 0.2);
         }
 
         .benefit .icon {
@@ -400,6 +422,7 @@
             font-size: 18px;
             font-weight: 700;
             margin-bottom: 6px;
+            color: #D4AF37;
         }
 
         .benefit p {
@@ -420,13 +443,14 @@
             background: rgba(255, 255, 255, 0.05);
             padding: 25px;
             border-radius: 18px;
-            border: 1px solid rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(212, 175, 55, 0.1);
             transition: 0.4s;
         }
 
         .testimonial:hover {
             transform: translateY(-5px);
             background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(212, 175, 55, 0.2);
         }
 
         .testimonial .user {
@@ -441,7 +465,7 @@
             height: 50px;
             border-radius: 50%;
             object-fit: cover;
-            border: 2px solid rgba(255, 45, 120, 0.3);
+            border: 2px solid rgba(212, 175, 55, 0.3);
         }
 
         .testimonial .user .name {
@@ -451,7 +475,7 @@
 
         .testimonial .user .role {
             font-size: 12px;
-            color: #ff6b9d;
+            color: #FF6B6B;
             margin-top: 2px;
         }
 
@@ -463,7 +487,7 @@
         }
 
         .testimonial .stars {
-            color: #ffe600;
+            color: #D4AF37;
             margin-top: 12px;
             font-size: 18px;
             letter-spacing: 2px;
@@ -476,7 +500,7 @@
             padding: 55px 35px;
             text-align: center;
             margin: 50px 0 30px;
-            border: 1px solid rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(212, 175, 55, 0.15);
         }
 
         .cta .emoji {
@@ -498,7 +522,7 @@
         }
 
         .cta h2 span {
-            background: linear-gradient(135deg, #ffe600, #ff2d78, #9b30ff);
+            background: linear-gradient(135deg, #D4AF37, #FF6B6B);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -517,7 +541,7 @@
 
         /* ===== ФУТЕР ===== */
         .footer {
-            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            border-top: 1px solid rgba(212, 175, 55, 0.15);
             padding-top: 45px;
             margin-top: 50px;
         }
@@ -530,7 +554,7 @@
         }
 
         .footer h4 {
-            color: #ff6b9d;
+            color: #D4AF37;
             font-size: 13px;
             text-transform: uppercase;
             letter-spacing: 2px;
@@ -548,33 +572,7 @@
         }
 
         .footer a:hover {
-            color: #ff6b9d;
-        }
-
-        .footer .social {
-            display: flex;
-            gap: 12px;
-            margin-top: 16px;
-        }
-
-        .footer .social a {
-            width: 42px;
-            height: 42px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: rgba(255, 255, 255, 0.05);
-            font-size: 20px;
-            text-decoration: none;
-            color: #fff;
-            transition: 0.3s;
-        }
-
-        .footer .social a:hover {
-            background: rgba(255, 45, 120, 0.2);
-            color: #ff2d78;
-            transform: translateY(-3px);
+            color: #D4AF37;
         }
 
         .footer .contact-item {
@@ -587,25 +585,63 @@
         }
 
         .footer-bottom {
-            border-top: 1px solid rgba(255, 255, 255, 0.04);
+            border-top: 1px solid rgba(212, 175, 55, 0.1);
             padding-top: 20px;
             display: flex;
             justify-content: space-between;
-            color: rgba(255, 255, 255, 0.25);
+            color: rgba(255, 255, 255, 0.3);
             font-size: 13px;
             flex-wrap: wrap;
             gap: 10px;
         }
 
         .footer-bottom a {
-            color: rgba(255, 255, 255, 0.25);
+            color: rgba(255, 255, 255, 0.3);
             text-decoration: none;
             padding: 0 12px;
             transition: 0.3s;
         }
 
         .footer-bottom a:hover {
-            color: #ff6b9d;
+            color: #D4AF37;
+        }
+
+        /* ===== СОЦИАЛЬНЫЕ ИКОНКИ ===== */
+        .social {
+            display: flex;
+            gap: 12px;
+            margin-top: 16px;
+        }
+
+        .social a {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.05);
+            font-size: 20px;
+            text-decoration: none;
+            color: #fff;
+            transition: 0.3s;
+            border: 1px solid rgba(212, 175, 55, 0.15);
+        }
+
+        .social a:hover {
+            background: rgba(212, 175, 55, 0.15);
+            transform: translateY(-3px);
+            border-color: #D4AF37;
+        }
+
+        .social a[title="ВКонтакте"]:hover {
+            color: #0077FF;
+            border-color: #0077FF;
+        }
+
+        .social a[title="Telegram"]:hover {
+            color: #26A5E4;
+            border-color: #26A5E4;
         }
 
         /* ===== МОБИЛЬНОЕ МЕНЮ ===== */
@@ -629,7 +665,7 @@
                 flex-direction: column;
                 gap: 12px;
                 padding: 20px 0 10px;
-                border-top: 1px solid rgba(255, 255, 255, 0.06);
+                border-top: 1px solid rgba(212, 175, 55, 0.1);
             }
 
             .nav.open {
@@ -677,27 +713,36 @@
         .delay-1 {
             animation-delay: 0.1s;
         }
+
         .delay-2 {
             animation-delay: 0.2s;
         }
+
         .delay-3 {
             animation-delay: 0.3s;
         }
+
         .delay-4 {
             animation-delay: 0.4s;
         }
     </style>
 </head>
+
 <body>
 
     <div class="container">
 
         <!-- ===== ХЕДЕР ===== -->
         <header class="header">
-            <a href="#" class="logo">🌸 DonButon</a>
+            <a href="#" class="logo" style="display:flex; align-items:center; gap:12px; text-decoration:none;">
+                <img src="https://sun9-64.vkuserphoto.ru/s/v1/ig2/6osZzx_MNnAZu23UTstesRY3bo_pZCRa7FrAaN-guteRHoBjHdh_J5eYv7qXPMkU6t7isdgX9HIkhvQ1eCWKXTpw.jpg?quality=95&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720,1080x1080,1280x1280,1440x1440,2160x2160&from=bu&u=LL_sA7nx2ATiNBCWfNhFCImXJlL-3Bm34g5pwkdg3q0&cs=2160x0"
+                    alt="Дон Бутон" style="height:40px; width:auto; border-radius:8px;">
+                <span
+                    style="font-size:28px; font-weight:900; background:linear-gradient(135deg,#D4AF37,#F5B041); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;">Дон
+                    Бутон</span>
+            </a>
             <button class="menu-btn" onclick="document.querySelector('.nav').classList.toggle('open')">☰</button>
             <nav class="nav">
-                <a href="#">Главная</a>
                 <a href="#catalog">Букеты</a>
                 <a href="#benefits">Преимущества</a>
                 <a href="#testimonials">Отзывы</a>
@@ -814,7 +859,8 @@
             </div>
 
             <div style="text-align:center; margin-top:40px;">
-                <a href="#" class="btn-primary" style="background:linear-gradient(135deg,#9b30ff,#ff2d78); color:#fff;">Смотреть все букеты</a>
+                <a href="#" class="btn-primary"
+                    style="background:linear-gradient(135deg,#D4AF37,#F5B041); color:#0f0c29;">Смотреть все букеты</a>
             </div>
         </section>
 
@@ -822,7 +868,7 @@
         <section id="benefits">
             <div class="section-title fade-up">
                 <div class="sub">⭐ Почему мы?</div>
-                <h2><span>Преимущества DonButon</span></h2>
+                <h2><span>Преимущества Дон Бутон</span></h2>
             </div>
 
             <div class="benefits">
@@ -875,7 +921,8 @@
                             <div class="role">Постоянный клиент</div>
                         </div>
                     </div>
-                    <div class="text">"Заказывала букет для мамы — восторг! Цветы свежайшие, доставка быстрее, чем обещали. Обязательно вернусь!"</div>
+                    <div class="text">"Заказывала букет для мамы — восторг! Цветы свежайшие, доставка быстрее, чем
+                        обещали. Обязательно вернусь!"</div>
                     <div class="stars">★★★★★</div>
                 </div>
 
@@ -887,7 +934,8 @@
                             <div class="role">Клиент с 2021 года</div>
                         </div>
                     </div>
-                    <div class="text">"Лучший цветочный в городе! Всегда яркие, необычные композиции. Ни разу не подвели со сроками."</div>
+                    <div class="text">"Лучший цветочный в городе! Всегда яркие, необычные композиции. Ни разу не подвели
+                        со сроками."</div>
                     <div class="stars">★★★★★</div>
                 </div>
 
@@ -899,7 +947,8 @@
                             <div class="role">Корпоративный клиент</div>
                         </div>
                     </div>
-                    <div class="text">"Заказываем регулярно для офиса и мероприятий. Флористы DonButon — настоящие художники!"</div>
+                    <div class="text">"Заказываем регулярно для офиса и мероприятий. Флористы Дон Бутон — настоящие
+                        художники!"</div>
                     <div class="stars">★★★★★</div>
                 </div>
             </div>
@@ -912,7 +961,7 @@
             <p>Оформите заказ прямо сейчас и получите бесплатную открытку с каждым букетом!</p>
             <div class="buttons">
                 <a href="#catalog" class="btn-primary">🛒 Заказать букет</a>
-                <a href="#" class="btn-secondary">📞 +7 (999) 123-45-67</a>
+                <a href="#" class="btn-secondary">📞 +7 (932) 058-08-33</a>
             </div>
         </section>
 
@@ -920,21 +969,26 @@
         <footer class="footer" id="contacts">
             <div class="footer-grid">
                 <div>
-                    <div style="font-size:26px; font-weight:900; background:linear-gradient(135deg,#ffe600,#ff2d78,#9b30ff); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;">🌸 DonButon</div>
-                    <p style="color:rgba(255,255,255,0.4); font-size:14px; margin-top:12px; line-height:1.6;">Яркие цветы с доставкой по городу. Работаем с 2019 года — дарим радость каждый день.</p>
-                    <div class="social">
-                        <a href="#">📸</a>
-                        <a href="#">💬</a>
-                        <a href="#">📱</a>
+                    <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
+                        <img src="https://sun9-64.vkuserphoto.ru/s/v1/ig2/6osZzx_MNnAZu23UTstesRY3bo_pZCRa7FrAaN-guteRHoBjHdh_J5eYv7qXPMkU6t7isdgX9HIkhvQ1eCWKXTpw.jpg?quality=95&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720,1080x1080,1280x1280,1440x1440,2160x2160&from=bu&u=LL_sA7nx2ATiNBCWfNhFCImXJlL-3Bm34g5pwkdg3q0&cs=2160x0"
+                            alt="Дон Бутон" style="height:32px; width:auto; border-radius:6px;">
+                        <span
+                            style="font-size:26px; font-weight:900; background:linear-gradient(135deg,#D4AF37,#F5B041); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;">Дон
+                            Бутон</span>
                     </div>
-                </div>
-                <div>
-                    <h4>Каталог</h4>
-                    <a href="#">Букеты на день рождения</a>
-                    <a href="#">Свадебные букеты</a>
-                    <a href="#">Комнатные растения</a>
-                    <a href="#">Авторские композиции</a>
-                    <a href="#">Монобукеты</a>
+                    <p style="color:rgba(255,255,255,0.4); font-size:14px; margin-top:8px; line-height:1.6;">Яркие цветы
+                        с доставкой по городу. Работаем с 2019 года — дарим радость каждый день.</p>
+                    <div class="social">
+                        <a href="https://vk.com/donbutonnur" target="_blank" rel="noopener" title="ВКонтакте"
+                            style="color:#0077FF;">
+                            <svg fill="none" height="24" viewBox="0 0 24 24" width="24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path clip-rule="evenodd"
+                                    d="m4.2653 4.2653c-1.2653 1.2653-1.2653 3.30177-1.2653 7.3747v.72c0 4.0729 0 6.1094 1.2653 7.3747s3.30176 1.2653 7.3747 1.2653h.72c4.0729 0 6.1094 0 7.3747-1.2653s1.2653-3.3018 1.2653-7.3747v-.72c0-4.07293 0-6.1094-1.2653-7.3747s-3.3018-1.2653-7.3747-1.2653h-.72c-4.07294 0-6.1094 0-7.3747 1.2653zm1.7347 4.2347c.09636 4.6823 2.55576 7.5 6.6095 7.5h.2351v-2.6787c1.4764.1499 2.5773 1.2536 3.0268 2.6787h2.1286c-.5775-2.1318-2.0747-3.3105-3.0052-3.7608.9298-.5569 2.2458-1.9071 2.5557-3.7392h-1.9365c-.4064 1.48991-1.6152 2.8401-2.7701 2.9683v-2.9683h-1.9675v5.1967c-1.19737-.2997-2.75931-1.7572-2.82331-5.1967z"
+                                    fill="currentColor" fill-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
                 <div>
                     <h4>Информация</h4>
@@ -945,15 +999,15 @@
                 </div>
                 <div>
                     <h4>Контакты</h4>
-                    <div class="contact-item">📍 ул. Цветочная, 15, Москва</div>
-                    <div class="contact-item">📞 +7 (999) 123-45-67</div>
-                    <div class="contact-item">✉️ hello@floravibe.ru</div>
-                    <div class="contact-item">🕐 Пн-Вс: 8:00 — 23:00</div>
+                    <div class="contact-item">📍 ​ТРЦ Гудзон ​Ул. Подшибякина, 1/2а</div>
+                    <div class="contact-item">📞 +7 (932) 058-08-33</div>
+                    <div class="contact-item">✉️ hello@donbuton.ru</div>
+                    <div class="contact-item">🕐 Пн-Вс: 10:00 — 21:00</div>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <span>© 2025 DonButon. Все права защищены.</span>
+                <span>© 2026 Дон Бутон. Все права защищены.</span>
                 <div>
                     <a href="#">Политика конфиденциальности</a>
                     <a href="#">Условия использования</a>
@@ -966,21 +1020,21 @@
     <script>
         // ===== КНОПКА "В КОРЗИНУ" =====
         document.querySelectorAll('.btn-buy').forEach(btn => {
-            btn.addEventListener('click', function(e) {
+            btn.addEventListener('click', function (e) {
                 e.preventDefault();
                 const original = this.innerHTML;
                 this.innerHTML = '✅ Добавлено!';
                 this.style.background = 'linear-gradient(135deg, #00e676, #00c853)';
                 setTimeout(() => {
                     this.innerHTML = original;
-                    this.style.background = 'linear-gradient(135deg, #ff2d78, #9b30ff)';
+                    this.style.background = 'linear-gradient(135deg, #FF6B6B, #e55a5a)';
                 }, 1500);
             });
         });
 
         // ===== ПЛАВНАЯ ПРОКРУТКА =====
         document.querySelectorAll('a[href^="#"]').forEach(link => {
-            link.addEventListener('click', function(e) {
+            link.addEventListener('click', function (e) {
                 const href = this.getAttribute('href');
                 if (href === '#') return;
                 e.preventDefault();
@@ -988,7 +1042,6 @@
                 if (target) {
                     target.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
-                // Закрываем мобильное меню
                 const nav = document.querySelector('.nav');
                 if (nav && nav.classList.contains('open')) {
                     nav.classList.remove('open');
@@ -996,8 +1049,9 @@
             });
         });
 
-        console.log('🌸 DonButon загружен!');
+        console.log('🌸 Дон Бутон загружен!');
     </script>
 
 </body>
+
 </html>
